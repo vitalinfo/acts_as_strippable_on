@@ -1,13 +1,13 @@
-# ActsAsDowncasableOn 
+# ActsAsStrippableOn 
 
-Easy way to define AR attributes that should be stored in lowercase
+Easy way to define AR attributes that should be stripped before save
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'acts_as_downcasable_on'
+gem 'acts_as_strippable_on'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install acts_as_downcasable_on
+    $ gem install acts_as_strippable_on
     
 ## Usage
 
@@ -24,11 +24,11 @@ Setup
 
 ```ruby
 class User < ActiveRecord::Base
-  acts_as_downcasable_on :email, :login
+  acts_as_strippable_on :email, :login
 end
 ```
 
-Attributes `email` and `login` will be forced to lowercase before model validation.
+Attributes `email` and `login` will be stripped before model validation.
 
 ## Contributing
 1. Fork it
