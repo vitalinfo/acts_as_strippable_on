@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'active_record'
 require 'acts_as_strippable_on/version'
 require 'acts_as_strippable_on/core'
